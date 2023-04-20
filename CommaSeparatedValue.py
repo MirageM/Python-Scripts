@@ -1,15 +1,15 @@
 import csv
 
 # Specify the input and output file names
-input_file = "my_excel_file.csv"
-output_file = "requirement.csv"
+input_file = "Sample.csv"
+output_file = "my_excel_file.csv"
 
 # Specify the column that contains the values to separate
 column_to_split = 1 # Replace with the index of your desired column, starting from 0
 
 # Open the input and output files
 
-with open(input_file, 'r') as csv_file, open(output_file, 'w', newline='') as output:
+with open(input_file, 'r', encoding='ISO-8859-1') as csv_file, open(output_file, 'w', newline='') as output:
     reader = csv.reader(csv_file)
     writer = csv.writer(output)
 
